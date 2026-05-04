@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+/* ─── BASE ───────────────────────────────────────────────────────────────── */
+:root {
+  /* Surface */
+  --bg: #0a0a0b;
+  --bg-1: #111113;
+  --bg-2: #18181b;
+  --bg-3: #222226;
+
+  /* Border */
+  --b-0: rgba(255,255,255,0.04);
+  --b-1: rgba(255,255,255,0.08);
+  --b-2: rgba(255,255,255,0.14);
+  --b-3: rgba(255,255,255,0.22);
+
+  /* Text */
+  --t-0: #ffffff;
+  --t-1: rgba(255,255,255,0.82);
+  --t-2: rgba(255,255,255,0.46);
+  --t-3: rgba(255,255,255,0.26);
+
+  /* Accent */
+  --accent: #00e676;
+  --accent-dim: rgba(0,230,118,0.12);
+  --accent-glow: rgba(0,230,118,0.28);
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--t-1);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ─── GRID NOISE TEXTURE ─────────────────────────────────────────────────── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
+  background-size: 64px 64px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ─── HERO GLOW ───────────────────────────────────────────────────────────────── */
+.hero-glow {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0,230,118,0.07) 0%, transparent 70%);
+  top: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ─── ANIMATIONS ─────────────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

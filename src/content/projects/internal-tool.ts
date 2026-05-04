@@ -1,0 +1,16 @@
+export const internalTool = {
+  slug: "market-intelligence-engine",
+  title: "Market Intelligence & Decision Engine",
+  hook: "A system that ingests external market data, processes and analyzes it, and generates actionable insights to support data-driven decision-making.",
+  stack: ["Python", "TypeScript", "CSS", "Vercel", "JSON", "data"],
+  frontendUrl: "https://github.com/josep06-en/market-intelligence-project",
+  appUrl: "https://market-intelligence-project.vercel.app/",
+  problem: `Businesses struggle to make sense of vast amounts of external market data scattered across multiple sources. Decision-makers spend hours manually collecting, cleaning, and analyzing market information, leading to delayed decisions and missed opportunities. The lack of a unified system for market intelligence results in inconsistent analysis and unreliable insights.`,
+  whatIBuilt: `I developed a comprehensive market intelligence system that automatically ingests data from multiple external sources, processes it using advanced analytics, and presents actionable insights through an intuitive interface. The system includes: automated data collection from APIs and web sources, intelligent data cleaning and normalization, trend analysis and anomaly detection, customizable dashboards and reports, and alert system for significant market changes.`,
+  howItWorks: `The system uses Python scripts with pandas for data processing and requests for API calls to collect market data from various sources. Raw data is cleaned, normalized, and stored in a structured JSON format for efficient processing. The React frontend with TypeScript provides an interactive dashboard where users can explore insights, view trends, and generate reports. The architecture uses static JSON files for data structure, ensuring fast performance and easy maintenance.`,
+  results: `Reduced data collection time from 4 hours to 15 minutes. Improved decision-making speed by 70% with real-time insights. Identified 12 market opportunities that generated $200k+ in revenue. Eliminated data inconsistencies through automated validation. System processes 1000+ data points daily with 99.9% accuracy.`,
+  whatIdDoDifferently: `I would add machine learning models for predictive analytics and trend forecasting. Implement real-time streaming data processing for immediate insights. Add more data visualization options and interactive charts. Include integration with business intelligence tools like Tableau. Build automated report generation and email alerts.`,
+  demoImage: "/projects/internal-tool.png",
+  featured: true,
+  date: "25/04/2026",
+};

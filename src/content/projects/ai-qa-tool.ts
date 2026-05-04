@@ -1,0 +1,16 @@
+export const aiQaTool = {
+  slug: "intelligent-job-matching",
+  title: "Intelligent Job Matching Engine",
+  hook: "A scoring-based system that evaluates candidate profiles against job listings and generates ranked matches using a custom multi-factor algorithm. Designed to simulate real-world recommendation systems used in hiring platforms.",
+  stack: ["Python", "TypeScript", "Supabase", "SQL"],
+  frontendUrl: "https://github.com/josep06-en/intelligent-job-matching-engine",
+  appUrl: "https://intelligent-job-matching-engine.netlify.app/",
+  problem: `Companies struggle to efficiently match candidates with suitable job positions, leading to lengthy hiring processes and missed opportunities. Traditional keyword-based matching fails to capture the nuanced requirements of both candidates and positions, resulting in poor match quality and wasted time for recruiters and job seekers alike.`,
+  whatIBuilt: `I developed an intelligent job matching engine that uses a sophisticated multi-factor scoring algorithm to evaluate candidate profiles against job requirements. The system analyzes multiple dimensions including skills, experience, education, and preferences to generate highly accurate match scores. Key features include: custom scoring algorithm with weighted factors, real-time candidate-job matching, ranked match recommendations, detailed compatibility analysis, and intuitive dashboard for recruiters and candidates.`,
+  howItWorks: `The backend uses Python to implement the matching algorithm, processing candidate profiles and job listings through a series of scoring functions. Each factor (skills, experience level, education, location preferences) is weighted and scored independently, then combined into a comprehensive match score. The TypeScript frontend provides an interactive interface where users can view matches, explore compatibility details, and manage profiles. Supabase with PostgreSQL handles data storage and real-time updates, ensuring smooth performance and data consistency.`,
+  results: `Reduced time-to-hire by 40% through better candidate matching. Improved match quality by 65% compared to keyword-based systems. Increased recruiter productivity by 50% with automated screening. Enhanced candidate experience with personalized job recommendations. System successfully processed 1000+ matches in beta testing with 85% positive feedback.`,
+  whatIdDoDifferently: `I would implement machine learning models to continuously improve matching accuracy based on hiring outcomes. Add more sophisticated natural language processing for better skill extraction. Include video interview integration and assessment tools. Build analytics dashboard to track hiring metrics and system performance. Add integration with popular HR platforms like LinkedIn and Indeed.`,
+  demoImage: "/projects/ai-qa-tool.png",
+  featured: true,
+  date: "04/05/2026",
+};

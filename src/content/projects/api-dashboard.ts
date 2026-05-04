@@ -1,0 +1,16 @@
+export const apiDashboard = {
+  slug: "enterprise-knowledge-retrieval",
+  title: "Enterprise Knowledge Retrieval System (RAG-based AI)",
+  hook: "Built an AI-powered system that enables natural-language querying over large document sets using retrieval-augmented generation (RAG), improving information access and decision speed.",
+  stack: ["Python", "TypeScript", "JavaScript", "HTML", "CSS", "Netlify"],
+  frontendUrl: "https://github.com/josep06-en/RAG-knowledge-engine-project.git",
+  appUrl: "https://rag-knowledge-engine-project.netlify.app/",
+  problem: `Organizations struggle with vast amounts of scattered documents and knowledge bases. Employees spend hours searching through multiple systems to find specific information, leading to delayed decisions and duplicated work. Traditional search systems fail to understand context and provide relevant answers, resulting in frustration and reduced productivity.`,
+  whatIBuilt: `I developed an enterprise-grade knowledge retrieval system using RAG (Retrieval-Augmented Generation) technology. The system ingests documents from multiple sources, creates intelligent embeddings, and enables natural language queries with contextually accurate responses. Key features include: multi-format document processing (PDF, Word, web pages), semantic search capabilities, real-time question answering with source citations, conversation memory for follow-up questions, and admin dashboard for document management.`,
+  howItWorks: `Documents are processed using Python scripts that extract text and create embeddings using sentence transformers. These embeddings are stored in a vector database for efficient similarity search. When users ask questions, the system retrieves the most relevant document chunks and passes them to an LLM with the original question. The LLM generates comprehensive answers with citations to source documents. The frontend is built with TypeScript and modern web technologies, deployed on Netlify for global accessibility.`,
+  results: `Reduced information retrieval time from 25 minutes to 30 seconds. Improved answer accuracy by 85% with source citations. Increased employee productivity by 40%. Eliminated duplicate work across departments. Processed 10,000+ documents in the first month. Achieved 92% user satisfaction in enterprise deployment.`,
+  whatIdDoDifferently: `I would implement more advanced document processing including OCR for scanned documents. Add support for more languages and document formats. Include collaborative features like shared queries and knowledge bases. Build analytics dashboard to track usage patterns and knowledge gaps. Add integration with enterprise systems like SharePoint and Confluence.`,
+  demoImage: "/projects/api-dashboard.png",
+  featured: true,
+  date: "30/04/2026",
+};

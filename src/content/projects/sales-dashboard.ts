@@ -1,0 +1,16 @@
+export const salesDashboard = {
+  slug: "sales-dashboard",
+  title: "Sales Decision Intelligence System",
+  hook: "A system that analyzes sales data, detects performance changes, and surfaces actionable insights to support faster pricing and product decisions.",
+  stack: ["React", "TypeScript", "Vite", "Python (data processing)", "Static JSON architecture"],
+  frontendUrl: "https://github.com/josep06-en/sales-dashboard-frontend",
+  appUrl: "https://sales-dashboard-frontend-phi.vercel.app/",
+  problem: `The client, a mid-sized e-commerce business, was manually exporting sales data from their platform into Excel every Friday. This process took 3 hours and only provided a weekly snapshot. By the time trends were identified, the opportunity to respond had already passed. The manual process was prone to errors and couldn't handle the growing volume of data.`,
+  whatIBuilt: `I developed a real-time sales intelligence dashboard using Python and modern web technologies. The solution automatically pulls data via API, processes it with Pandas, and presents interactive visualizations that update every 15 minutes. Key features include: real-time revenue tracking, product performance comparisons, customer behavior patterns, and automated anomaly detection. The dashboard includes filters for date ranges, product categories, and geographic regions.`,
+  howItWorks: `The system follows a simple ETL pipeline: Data is fetched from the e-commerce platform's REST API every 15 minutes using a scheduled Python script. The raw JSON data is cleaned and transformed using Pandas, handling missing values and normalizing timestamps. Processed data is stored in a SQLite database for fast querying. The web application serves interactive charts and tables, with callbacks that update based on user interactions. Error handling includes retry logic for API failures and data validation checks.`,
+  results: `Reduced weekly reporting time from 3 hours to 5 minutes a 96% reduction. Enabled real-time decision making instead of weekly reactive analysis. Identified 3 underperforming product categories that were optimized, resulting in a 15% revenue increase. Reduced data errors by 100% through automated validation. Scalable to handle 10x current data volume without performance degradation.`,
+  whatIdDoDifferently: `I would implement a more robust caching strategy using Redis to further improve performance. Add automated alerting for significant metric changes. Include more advanced predictive analytics using machine learning. Implement user authentication and role-based access for different team members. Add data export functionality for custom reporting needs.`,
+  demoImage: "/projects/dashboard-demo.gif",
+  featured: true,
+  date: "24/04/2026",
+};
