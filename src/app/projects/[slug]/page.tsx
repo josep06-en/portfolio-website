@@ -146,15 +146,14 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
         <section className="py-20 border-t border-b-0">
           <div className="max-w-[1080px] mx-auto px-10 relative z-1">
             <div className="flex flex-col items-center gap-8">
-              {project.githubUrl ? (
+              {project.frontendUrl ? (
                 <a
-                  href={project.githubUrl}
+                  href={project.frontendUrl}
                   className="inline-flex items-center gap-2 font-mono text-xs font-medium tracking-widest uppercase px-6 border border-t-2 text-t-1 rounded no-underline transition-all hover:bg-t-0 hover:text-bg"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   View on GitHub
-                  <span className="text-sm"></span>
                 </a>
               ) : (
                 <span className="font-mono text-xs text-t-3 tracking-widest uppercase">

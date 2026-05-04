@@ -21,6 +21,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://josep-enrique-llopis.vercel.app"),
   title: "Josep Enrique Llopis — Python Developer · Solutions & Product Engineering",
   description: "I build tools that solve real problems. Python, REST APIs, SQL, AI-native workflows. Open to remote roles in Solutions and Product Engineering.",
   openGraph: {
